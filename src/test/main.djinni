@@ -1,0 +1,43 @@
+main = record { 
+  success: string;
+  wellnessDOS: list<wellnessDOS>;
+}
+
+wellnessDOS = record { 
+  benefits: list<benefits>;
+  canBuy: string;
+  dateTime: string;
+  serverTime: string;
+  startTime: string;
+}
+
+benefits = record { 
+  benefitCode: string;
+  benefitOriginPrice: string;
+  benefitPicUrl: string;
+  benefitTitle: string;
+  canWin: string;
+  channel: string;
+  directUrl: string;
+  effectiveInfo: string;
+  ext: ext;
+  hasInventory: string;
+  idleCoinPrice: string;
+  inventoryRemain: string;
+  inventoryTotal: string;
+  limitedBenefit: string;
+  noticeMsg: string;
+  previewPicUrl: string;
+  startTime: string;
+  startTimeMillions: string;
+  strategyCode: string;
+  type: string;
+  useInfo: string;
+}
+
+ext = record { 
+  cardType: string;
+  cardKey: string;
+}
+
+

@@ -1,0 +1,48 @@
+{
+  "name": "@ali/json2djinni",
+  "author": "json2djinni",
+  "version": "0.1.2",
+  "description": "",
+  "main": "src/core.js",
+  "module": "src/core.js",
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "start": "build-scripts start",
+    "build": "build-scripts build"
+  },
+  "bin": {
+    "json2djinni": "./src/index.js"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "Rax"
+  ],
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "devDependencies": {
+    "driver-universal": "^3.0.0",
+    "rax": "^1.1.0",
+    "rax-text": "^1.0.1",
+    "rax-view": "^1.0.2",
+    "build-plugin-rax-component": "^0.1.0",
+    "@alib/build-scripts": "^0.1.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "chalk": "^3.0.0",
+    "commander": "^4.1.1",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.1.0",
+    "lodash": "^4.17.15"
+  }
+}
